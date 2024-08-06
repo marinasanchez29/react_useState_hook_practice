@@ -12,23 +12,36 @@ function App() {
   }
 
   return (
-    <div style={{ backgroundColor: "pink" }}>
-      <h1 style={{ color: "black", textAlign: "center" }}>
+    <div
+      style={{
+        backgroundColor: "midnightblue",
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <h1 style={{ color: "mintcream", textAlign: "center" }}>
         Practicing React useState
       </h1>
-      <button
-        style={{ padding: "10px", borderRadius: "10px" }}
-        onClick={increaseCount}
+      <div
+        style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}
       >
-        +
-      </button>
-      <p style={{ textAlign: "center" }}>{count}</p>
-      <button
-        style={{ padding: "10px", borderRadius: "10px" }}
-        onClick={decreaseCount}
-      >
-        -
-      </button>
+        <button
+          style={{ padding: "10px", borderRadius: "10px", margin: "0 10px" }}
+          onClick={increaseCount}
+        >
+          +
+        </button>
+        <p style={{ color: "mintcream", margin: "10px" }}>{count}</p>
+        <button
+          style={{ padding: "10px", borderRadius: "10px", margin: "0 10px" }}
+          onClick={decreaseCount}
+        >
+          -
+        </button>
+      </div>
     </div>
   );
 }
